@@ -82,3 +82,35 @@ Notes
    of sub class.
 3. super class reference can not access individual methods of sub class (a method which is present in the sub
    class and not present in the super class.)
+
+Method overriding 
+--------------------
+-> defining same method signature of a super class in the sub class
+
+-> when super class method is public, then overridsden method of sub class must be public
+   it can not be defined as default,protected and private
+
+-> when super class method is defined as default, then sub class can override that method
+        1. default
+        2. public
+        3. protected
+
+-> when super class method is defined as protected, then sub class can override that method
+        1. protected
+        2. public
+
+-> private methods are not available to any of sub classews. 
+
+
+Abstract classe
+--------------------------------
+-> Abstract class contains zero or more abotract method and concrete methods
+-> Abstract class can not be instanciated, but we can create reference variable (object creation is not possible)
+-> The reference of an abstract class can be used to call all the methods of abstract classs
+   and override the methods of sub class
+-> The reference of an abstract class can not be used toi access the individual methods of 
+   the sub class.
+-> all the sub classes of an abstract must override all the abstract methods. 
+-> If any sub class not not overriding the any one of abstract method, then 
+   that sub class must be defined as abstract.
+-> An abstarct class can not be defined both as 'abstarct' and 'final'
